@@ -5,8 +5,8 @@ using UnityEngine;
 public class Prison : MonoBehaviour
 {
     public GameObject Player;
-    private int _handCuffChildIndex = 1;
-    private float _handCuffOffSet = 0.2f;
+    private readonly int _handCuffChildIndex = 1;
+    private readonly float _handCuffOffSet = 0.2f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Criminal") && !GameManager.Instance.Criminals.Contains(other.gameObject))

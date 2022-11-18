@@ -10,7 +10,7 @@ public class CriminalManager : MonoBehaviour
     public bool ActivateFollow = false;
     public bool MoveToPrison = false;
     private bool _isOnList = false;
-    private float _handCuffOffSet = 0.1f;
+    private readonly float _handCuffOffSet = 0.1f;
     [SerializeField] private GameObject _prison;
     [SerializeField] private float _speed;
 

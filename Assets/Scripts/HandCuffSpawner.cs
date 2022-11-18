@@ -8,7 +8,7 @@ public class HandCuffSpawner : MonoBehaviour
     public GameObject HandCuff;
     public GameObject Player;
     private bool _isSpawnerActive = true;
-    private float _handCuffOffSet = 0.2f;
+    private readonly float _handCuffOffSet = 0.2f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && _isSpawnerActive)
